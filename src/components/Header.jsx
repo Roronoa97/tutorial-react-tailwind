@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Help from './header/Help';
 import Notification from './header/Notification';
 import SearchModal from './header/SearchModal';
 
@@ -42,6 +43,7 @@ function Header({sidebarOpen, setSidebarOpen}) {
                         </button>
                         <SearchModal id="search-modal" searchId="search" modalOpen={searchModalOpen} setModalOpen={setSearchModalOpen} />
                         <Notification />
+                        <Help />
                     </div>
                 </div>
             </div>
