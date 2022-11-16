@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Notification from './header/Notification';
 import SearchModal from './header/SearchModal';
 
 function Header({sidebarOpen, setSidebarOpen}) {
@@ -40,6 +41,7 @@ function Header({sidebarOpen, setSidebarOpen}) {
                             </svg>
                         </button>
                         <SearchModal id="search-modal" searchId="search" modalOpen={searchModalOpen} setModalOpen={setSearchModalOpen} />
+                        <Notification />
                     </div>
                 </div>
             </div>
